@@ -1,0 +1,45 @@
+.main
+	position: relative
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: url(../img/main/overlay.png) center no-repeat
+		z-index: -1
+	&-wrap
+		display: flex
+	&-logo
+		width: 310px
+		height: 289px
+		background: url(../img/logo.png) center no-repeat
+		position: absolute
+		top: 10%
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 2
+	&-block 
+		width: 100%
+		height: 100vh
+		transition: 0.5s
+		filter: blur(2px)
+		text-align: center
+		display: flex
+		justify-content: center
+		align-items: center
+		&:nth-child(2)
+			background: url(../img/main/beasy.jpg) center no-repeat
+			background-size: auto 100%
+		&:last-child
+			background: url(../img/main/fut.jpg) center no-repeat
+			background-size: auto 100%
+		&:hover
+			width: 150%
+			filter: blur(0px)
+		&__button
+			font-size: 40px
+			background-color: rgba(white, 0.5)
+			padding: 20px

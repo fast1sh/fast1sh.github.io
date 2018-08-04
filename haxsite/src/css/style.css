@@ -1,0 +1,161 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-y: hidden;
+}
+
+body a,
+body input,
+body button,
+body textarea {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+  background: none;
+}
+
+body a:focus,
+body input:focus,
+body button:focus,
+body textarea:focus {
+  outline: none;
+}
+
+.header {
+  background-color: #000;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 28px;
+  width: 50px;
+  height: 40px;
+  background: #fff url("../img/main/logo.png") center no-repeat;
+  background-size: 60%;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-nav__item {
+  margin-right: 26px;
+  display: inline-block;
+}
+
+.header-nav__item-link {
+  padding-bottom: 3px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-nav__item-link:hover {
+  border-bottom: 2px solid red;
+}
+
+.header-social__item {
+  margin-right: 15px;
+  color: #fff;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.header-social__item:hover {
+  opacity: 1;
+}
+
+.header-social__item:last-child {
+  margin-right: 25px;
+}
+
+.main {
+  position: relative;
+}
+
+.main::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/main/overlay.png") center no-repeat;
+  z-index: -1;
+}
+
+.main-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-logo {
+  width: 310px;
+  height: 289px;
+  background: url("../img/logo.png") center no-repeat;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.main-block {
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-block:nth-child(2) {
+  background: url("../img/main/beasy.jpg") center no-repeat;
+  background-size: auto 100%;
+}
+
+.main-block:last-child {
+  background: url("../img/main/fut.jpg") center no-repeat;
+  background-size: auto 100%;
+}
+
+.main-block:hover {
+  width: 150%;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.main-block__button {
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
