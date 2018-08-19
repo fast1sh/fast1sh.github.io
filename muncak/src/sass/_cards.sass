@@ -1,0 +1,61 @@
+.cards
+	text-align: center
+	padding-top: 200px
+	&-title
+		color: $text-black
+		margin-bottom: 100px
+		font-size: 36px
+		font-weight: 700
+		position: relative
+		&::before 
+			content: ''
+			display: block
+			position: absolute
+			width: 801px
+			height: 891px
+			background: url(../img/cards/bg-1.png) center no-repeat
+			z-index: -99
+			top: 0
+			left: -83%
+		&::after 
+			content: ''
+			display: block
+			position: absolute
+			width: 584px
+			height: 838px
+			background: url(../img/cards/bg-2.png) center no-repeat
+			z-index: -99
+			top: 0
+			left: 95%
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-block 
+		box-shadow: 0 27px 43px rgba(32, 94, 171, 0.1)
+		border-radius: 20px
+		text-align: left
+		background-color: $light
+		padding: 250px 30px 40px 30px
+		&:nth-child(1)
+			background: url(../img/cards/1.jpg) 0 0 no-repeat
+		&:nth-child(2)
+			background: url(../img/cards/2.jpg) 0 0 no-repeat
+		&:nth-child(3)
+			background: url(../img/cards/3.jpg) 0 0 no-repeat
+		&__title
+			color: $text-black
+			margin-bottom: 40px
+			font-size: 24px
+			font-weight: 700
+		&__descr
+			color: $text-gray
+			margin-bottom: 40px
+			font-size: 18px
+			line-height: 30px
+		&__more
+			color: $main-button
+			font-size: 18px
+			font-weight: 600
+			&:hover
+				cursor: pointer
+				border-bottom: 2px solid lighten($main-button, 5)

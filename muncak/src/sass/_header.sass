@@ -1,0 +1,41 @@
+.header
+	padding-top: 80px
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-logo
+		width: 157px
+		height: 31px
+		background: url(../img/logo.png) center no-repeat
+	&-nav
+		&__item
+			margin-right: 58px
+			color: $light
+			font-size: 18px
+			letter-spacing: 0.9px
+			padding-bottom: 5px
+			&:hover
+				cursor: pointer
+				border-bottom: 2px solid lighten($main-button, 5)
+			&:last-child
+				padding: 5px 36px
+				background-color: #ffffff
+				border-radius: 13px
+				font-weight: 600
+				color: $login
+				margin-right: 0
+				transition: top 0.5s ease-out
+				position: relative
+				&:hover
+					cursor: pointer
+					color: $light
+					background-color: lighten($main-button, 5)
+	&-burger 
+		display: none
+		height: 20px
+		width: 20px
+		background: url(../img/burger.png) center no-repeat
+		background-size: cover
+		opacity: 0.8
+		&:hover
+			cursor: pointer

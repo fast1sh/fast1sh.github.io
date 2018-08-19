@@ -1,0 +1,98 @@
+.envision
+	padding-top: 474px
+	text-align: center
+	&-wrap
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		&__second
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+	&-title
+		color: $text-black
+		margin-bottom: 250px
+		font-family: "Open Sans"
+		font-size: 36px
+		font-weight: 700
+		line-height: 50px
+		&::before 
+			content: ''
+			display: block
+			position: absolute
+			width: 3345px
+			height: 2702px
+			background: url(../img/envision/bg-1.png) center no-repeat
+			z-index: -99
+			top: 133%
+			left: -107%
+		&::after 
+			content: ''
+			display: block
+			position: absolute
+			width: 2175px
+			height: 2062px
+			background: url(../img/envision/bg-2.png) center no-repeat
+			z-index: -99
+			top: 93%
+			left: 85%
+	&-block 
+		box-shadow: 0 27px 43px rgba(32, 94, 171, 0.1)
+		border-radius: 20px
+		margin-bottom: 65px
+		background-color: $light
+		width: 477px
+		min-height: 283px
+		padding-top: 73px
+		padding-left: 73px
+		text-align: left
+		position: relative
+		&__title
+			color: $text-black
+			font-size: 24px
+			font-weight: 700
+			margin-bottom: 50px
+		&__descr
+			color: $text-gray
+			font-size: 18px
+			line-height: 35.94px
+		&__first
+			&::before 
+				content: ''
+				display: block
+				position: absolute
+				width: 155px
+				height: 129px
+				background: url(../img/envision/obj-1.png) center no-repeat
+				z-index: 99
+				top: -50%
+				left: 50%
+				transform: translateX(-50%)
+		&__second
+			align-self: flex-end
+			&::before 
+				content: ''
+				display: block
+				position: absolute
+				width: 112px
+				height: 150px
+				background: url(../img/envision/obj-2.png) center no-repeat
+				z-index: 99
+				top: -50%
+				left: 50%
+				transform: translateX(-50%)
+		&__third
+			&::before 
+				content: ''
+				display: block
+				position: absolute
+				width: 175px
+				height: 108px
+				background: url(../img/envision/obj-3.png) center no-repeat
+				z-index: 99
+				top: -50%
+				left: 50%
+				transform: translateX(-50%)
+	&-button
+		margin-right: 157px

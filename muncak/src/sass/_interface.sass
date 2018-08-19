@@ -1,0 +1,27 @@
+.button
+	width: 241px
+	height: 80px
+	box-shadow: 0 22px 24px 1px rgba(17, 83, 165, 0.21)
+	border-radius: 40px
+	background-color: $main-button
+	font-size: 20px
+	color: $light
+	transition: all 0.3s ease
+	&:hover
+		cursor: pointer
+		transform: scale(1.04)
+		background-color: lighten($main-button, 5)
+	&-light 
+		background-color: #00aeff
+		&:hover
+			background-color: lighten(#00aeff, 5)
+.input
+	margin-bottom: 38px
+	text-align: left
+	padding: 25px 37px
+	padding-right: 300px
+	border-radius: 20px
+	color: $text-gray
+	font-size: 24px
+	&::placeholder
+		opacity: 0.6

@@ -1,0 +1,41 @@
+.footer
+	padding-top: 100px
+	text-align: left
+	position: relative
+	&::before 
+		content: ''
+		display: block
+		position: absolute
+		width: 2508px
+		height: 1008px
+		background: url(../img/footer/bg-1.png) left top no-repeat
+		z-index: -99
+		top: -100%
+		left: -15%
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-block 
+		color: $light
+		&__title
+			margin-bottom: 58px
+			font-size: 18px
+			font-weight: 600
+			letter-spacing: 1.8px
+			text-transform: uppercase
+		&__item
+			font-size: 16px
+			color: $light
+			line-height: 40px
+			&-wrap
+				display: flex
+				flex-direction: column
+			&:hover
+				border-bottom: 2px solid lighten($main-button, 5)
+				margin-bottom: -2px
+			&-adress
+				margin-bottom: 45px
+				font-size: 16px
+				display: block
+				color: $light
+				line-height: 40px
