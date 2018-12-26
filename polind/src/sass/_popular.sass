@@ -1,0 +1,74 @@
+.popular
+  z-index: 4
+  position: relative
+  margin-top: -230px
+  text-align: center
+  margin-bottom: 400px
+
+  &-title
+    font-size: 18px
+    color: #ffffff
+
+.slider
+  &-block
+    position: relative
+    padding-top: 320px
+    padding-bottom: 60px
+
+    &__title
+      font-size: 30px
+      color: #ffffff
+      font-weight: 700
+
+    &__subtitle
+      margin-bottom: 55px
+      color: $button
+      font-size: 14px
+
+.first
+  background: url("../img/slider/1.jpg") center no-repeat
+
+.second
+  background: url("../img/slider/2.jpg") center no-repeat
+
+.third
+  background: url("../img/slider/3.jpg") center no-repeat
+
+.fourth
+  background: url("../img/slider/4.jpg") center no-repeat
+
+.fifth
+  background: url("../img/slider/5.jpg") center no-repeat
+
+.slick-slide
+  &:focus
+    outline: none
+
+.card
+  padding-top: 179px
+  opacity: 0
+  transition: 0.3s
+  position: absolute
+  background-color: rgba(0, 0, 0, 0.2)
+  left: 50%
+  transform: translateX(-50%)
+  top: 25px
+  width: 370px
+  height: 251px
+
+  &-title
+    margin-bottom: 18px
+    font-size: 48px
+    font-weight: 700
+    color: #ffffff
+
+  &-subtitle
+    margin-bottom: 60px
+    font-size: 14px
+    color: #ffffff
+
+  &:hover
+    opacity: 1
+
+  &:hover + .slider-block__title
+    visibility: hidden

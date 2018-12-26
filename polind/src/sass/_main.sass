@@ -1,0 +1,64 @@
+.main
+  z-index: 1
+  padding-top: 50px
+  padding-bottom: 550px
+  background: url(../img/main/bg.jpg) center no-repeat
+
+  &-header
+    z-index: 1
+    display: flex
+    justify-content: space-between
+
+  &-logo
+
+    height: 40px
+    padding-left: 61px
+    font-size: 30px
+    font-weight: 700
+    line-height: 40px
+    color: #ffffff
+    position: relative
+
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      top: -10px
+      left: -0px
+      width: 51px
+      height: 61px
+      background: url(../img/main/logo.png) center no-repeat
+      background-size: contain
+
+  &-nav
+    line-height: 40px
+    font-size: 18px
+    display: flex
+
+    &__link
+      margin-right: 50px
+      color: #ffffff
+      &:hover
+        color: $button
+      &-last 
+        margin-right: 0
+
+  &-block
+    padding-top: 235px
+    text-align: center
+
+  &-title
+    margin-bottom: 30px
+    font-size: 92px
+    color: #ffffff
+    font-weight: 700
+
+    &_span
+      display: block
+      color: #ed6950
+  
+  &-subtitle
+    margin-bottom: 50px
+    font-size: 18px
+    color: #ffffff
+    opacity: .4
