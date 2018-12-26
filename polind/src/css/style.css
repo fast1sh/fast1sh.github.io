@@ -581,11 +581,11 @@ textarea:focus {
   }
 
   .main-nav {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .main-nav__link {
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .main-nav__link-last {
