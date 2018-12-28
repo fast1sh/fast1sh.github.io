@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Бэст</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		 crossorigin="anonymous">
+		<link rel="stylesheet" href="libs/reset.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		<main class="main" id="main">
+			<div class="container-fluid">
+
+				<div class="row align-items-center justify-content-between">
+
+					<div class="col-1">
+							<img class="main-logo" src="img/logo.svg" alt="Бэст">
+					</div><!-- /.col-2 -->
+
+					<div class="col-3">
+						<div class="main-text">
+							<p class="main-text__top">
+								Бэст – центр недвижимости
+							</p><!-- /.main-text__header -->
+							<h3 class="main-text__bot">
+								13 лет на рынке недвижимости
+							</h3><!-- /.main-text__bot -->
+						</div><!-- /.main-text -->
+					</div><!-- /.col-4 -->
+
+					<div class="col-7">
+						<div class="main-text main-text_right">
+							<p class="main-text__top">
+								8 (343) 310-03-23
+							</p><!-- /.main-text__header -->
+							<h3 class="main-text__bot main-text__adress">
+								г.Екатеринбург, ул.8 Марта, 12А
+							</h3><!-- /.main-text__bot -->
+						</div><!-- /.main-text -->
+					</div><!-- /.col-8 -->
+
+				</div><!-- /.row -->
+			</div><!-- /.container-fluid -->
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-6">
+						<div class="main-block" id="main-block">
+							<h1 class="main-block__title">
+								Пройди тест
+								за 1 минуту и узнай
+							</h1>
+							<h2 class="main-block__subtitle">
+								как выгодно купить квартиру
+								и сэкономить время на её поиске
+							</h2>
+							<h3 class="main-block__descr">
+								Получи бесплатную подборку квартир за прохождение 
+							</h3>
+							<button class="button" id="button-start" onclick="start()">Пройти тест</button>
+							<span class="main-block__questions">
+								Всего 6 вопросов
+							</span><!-- /.main-block__questions -->
+						</div><!-- /.main-block -->
+					</div><!-- /.col-6 -->
+
+				</div><!-- /.row -->
+				<div class="main-circle"></div><!-- /.main-circle -->
+				<div class="main-render">
+					<img class="main-render__img" src="img/main/render.png" alt="Render">
+				</div><!-- /.main-render -->
+			</div><!-- /.container -->
+
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col">
+						<div class="main-text">
+							<p class="main-text__top main-text__decl">
+								Огрн
+							</p><!-- /.main-text__header -->
+							<h3 class="main-text__bot">
+								1056603484838
+							</h3><!-- /.main-text__bot -->
+						</div><!-- /.main-text -->
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.container-fluid -->
+
+		</main><!-- /.main -->
+
+		<section class="step step-one hidden" id="step-one">
+			<div class="container">
+
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block step-region__block">
+							
+							<div class="row justify-content-end">
+					
+								<div class="col-2">
+									<button class="button-close" onclick="closeSlide()">Закрыть</button><!-- /.button-close -->
+								</div><!-- /.col -->
+					
+							</div><!-- /.row -->
+					
+							<div class="row justify-content-center">
+								<div class="col-2">
+										<span class="steps-order">
+											Шаг 1 из 6
+										</span><!-- /.steps-order -->
+								</div><!-- /.col -->
+								<div class="col-8">
+									<ul class="steps-list">
+										<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+										<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										<li class="steps-list__item"></li><!-- /.steps-list__item -->
+									</ul><!-- /.steps-list -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+					
+							<div class="row">
+								<div class="col">
+									<p class="step-title">
+										В каком районе вы бы хотели приобрести квартиру?
+									</p><!-- /.step-title -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+					
+							<div class="row">
+								<div class="col">
+									<p class="step-subtitle">
+										(можно выбрать несколько вариантов ответов)
+									</p><!-- /.step-subtitle -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+					
+							<div class="row justify-content-around">
+
+								<div class="col-5">
+									<form action="#" class="step-form">
+										<ul class="step-region">
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q11" name="region" value="11"><label for="q11">Верх-Исетский
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q12" name="region" value="12"><label for="q12">Железнодорожный
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q13" name="region" value="13"><label for="q13">Орджоникидзевский
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q14" name="region" value="14"><label for="q14">Кировский
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q15" name="region" value="15"><label for="q15">Октябрьский
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q16" name="region" value="16"><label for="q16">Чкаловский
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q17" name="region" value="17"><label for="q17">Ленинский
+													район</label></li><!-- /.step-region__item -->
+											<li class="step-region__item"><input class="step-input step-region__input" type="checkbox" id="q18" name="region" value="18"><label for="q18">Не
+													определились</label></li><!-- /.step-region__item -->
+										</ul><!-- /.step-region -->
+										<button class="button step-button button-next" onclick="next()">Следующий шаг</button><!-- /.button -->
+									</form><!-- /.step-form -->
+								</div><!-- /.col-4 -->
+								<div class="col-5">
+									<img class="step-map" src="img/step/map.svg" alt="Map">
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step-one -->
+
+		<section class="step step-two hidden" id="step-two">
+			<div class="container">
+		
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block">
+		
+							<div class="container">
+								<div class="row justify-content-end">
+								
+									<div class="col-2">
+										<button class="button-close" onclick="closeSlide()">Закрыть</button><!-- /.button-close -->
+									</div><!-- /.col -->
+								
+								</div><!-- /.row -->
+								
+								<div class="row justify-content-center">
+									<div class="col-2">
+										<span class="steps-order">
+											Шаг 2 из 6
+										</span><!-- /.steps-order -->
+									</div><!-- /.col -->
+									<div class="col-8">
+										<ul class="steps-list">
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										</ul><!-- /.steps-list -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								
+								<div class="row">
+									<div class="col">
+										<p class="step-title">
+											Какое количество комнат вам нужно?
+										</p><!-- /.step-title -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								
+								<div class="row">
+									<div class="col">
+										<p class="step-subtitle">
+											(можно выбрать несколько вариантов ответов)
+										</p><!-- /.step-subtitle -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								
+								<form class="step-rooms__form" action="#">
+									<div class="row">
+								
+										<div class="col-4">
+											<input class="step-input step-rooms__input" type="checkbox" id="q21" name="rooms" value="21"><label class="step-rooms__label step-rooms__label_first"
+											 for="q21">Студия</label>
+										</div><!-- /.col-4 -->
+										<div class="col-4">
+											<input class="step-input step-rooms__input" type="checkbox" id="q22" name="rooms" value="22"><label class="step-rooms__label step-rooms__label_second"
+											 for="q22">1 комната</label>
+										</div><!-- /.col-4 -->
+										<div class="col-4">
+											<input class="step-input step-rooms__input" type="checkbox" id="q23" name="rooms" value="23"><label class="step-rooms__label step-rooms__label_third"
+											 for="q23">2 комнаты</label>
+										</div><!-- /.col-4 -->
+										<div class="col-4">
+											<input class="step-input step-rooms__input" type="checkbox" id="q24" name="rooms" value="24"><label class="step-rooms__label step-rooms__label_fourth"
+											 for="q24">3 комнаты</label>
+										</div><!-- /.col-4 -->
+										<div class="col-4">
+											<input class="step-input step-rooms__input" type="checkbox" id="q25" name="rooms" value="25"><label class="step-rooms__label step-rooms__label_fifth"
+											 for="q25">4 комнаты</label>
+										</div><!-- /.col-4 -->
+										<div class="col-4">
+											<input class="step-input step-rooms__input" type="checkbox" id="q26" name="rooms" value="26"><label class="step-rooms__label step-rooms__label_sixth"
+											 for="q26">более 4-х комнат</label>
+										</div><!-- /.col-4 -->
+								
+									</div><!-- /.row -->
+								
+									<div class="row align-items-center justify-content-center">
+								
+										<div class="col-4">
+											<button class="step-button__back button-prev" onclick="previous()">Вернуться на шаг назад</button><!-- /.button-back -->
+										</div><!-- /.col-5 -->
+								
+										<div class="col-4">
+											<button class="button step-button button-next" onclick="next()">Следующий шаг</button><!-- /.button -->
+										</div><!-- /.col-5 -->
+								
+									</div><!-- /.row -->
+								</form>
+							</div><!-- /.container -->
+							
+		
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step-two -->
+
+		<section class="step step-three hidden" id="step-three">
+			<div class="container">
+		
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block">
+		
+							<div class="container">
+								<div class="row justify-content-end">
+		
+									<div class="col-2">
+										<button class="button-close" onclick="closeSlide()">Закрыть</button><!-- /.button-close -->
+									</div><!-- /.col -->
+		
+								</div><!-- /.row -->
+		
+								<div class="row justify-content-center">
+									<div class="col-2">
+										<span class="steps-order">
+											Шаг 3 из 6
+										</span><!-- /.steps-order -->
+									</div><!-- /.col -->
+									<div class="col-8">
+										<ul class="steps-list">
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										</ul><!-- /.steps-list -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-title">
+											Какая нужна площадь?
+										</p><!-- /.step-title -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-subtitle">
+											(можно выбрать несколько вариантов ответов)
+										</p><!-- /.step-subtitle -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<form class="step-area__form" action="#">
+									<div class="row">
+		
+										<div class="col-6">
+											<input class="step-input step-area__input" type="checkbox" id="q31" name="area" value="31"><label class="step-area__label step-area__label_first"
+											 for="q31">До 35 м2</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-area__input" type="checkbox" id="q32" name="area" value="32"><label class="step-area__label step-area__label_second"
+											 for="q32">От 35 до 50 м2</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-area__input" type="checkbox" id="q33" name="area" value="33"><label class="step-area__label step-area__label_third"
+											 for="q33">От 50 до 65 м2</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-area__input" type="checkbox" id="q34" name="area" value="34"><label class="step-area__label step-area__label_fourth"
+											 for="q34">От 65 до 80 м2</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-area__input" type="checkbox" id="q35" name="area" value="35"><label class="step-area__label step-area__label_fifth"
+											 for="q35">От 80 до 100 м2</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-area__input" type="checkbox" id="q36" name="area" value="36"><label class="step-area__label step-area__label_sixth"
+											 for="q36">От 100 м2 и выше</label>
+										</div><!-- /.col-4 -->
+		
+									</div><!-- /.row -->
+		
+									<div class="row align-items-center justify-content-center">
+		
+										<div class="col-4">
+											<button class="step-button__back button-prev" onclick="previous()">Вернуться на шаг назад</button><!-- /.button-back -->
+										</div><!-- /.col-5 -->
+		
+										<div class="col-4">
+											<button class="button step-button button-next" onclick="next()">Следующий шаг</button><!-- /.button -->
+										</div><!-- /.col-5 -->
+		
+									</div><!-- /.row -->
+								</form>
+							</div><!-- /.container -->
+		
+		
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step-three -->
+
+		<section class="step step-four hidden" id="step-four">
+			<div class="container">
+		
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block">
+		
+							<div class="container">
+								<div class="row justify-content-end">
+		
+									<div class="col-2">
+										<button class="button-close" onclick="closeSlide()">Закрыть</button><!-- /.button-close -->
+									</div><!-- /.col -->
+		
+								</div><!-- /.row -->
+		
+								<div class="row justify-content-center">
+									<div class="col-2">
+										<span class="steps-order">
+											Шаг 4 из 6
+										</span><!-- /.steps-order -->
+									</div><!-- /.col -->
+									<div class="col-8">
+										<ul class="steps-list">
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										</ul><!-- /.steps-list -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-title">
+											Какой нужен ремонт?
+										</p><!-- /.step-title -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-subtitle">
+											(можно выбрать несколько вариантов ответов)
+										</p><!-- /.step-subtitle -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								<form class="step-repair__form" action="#">
+									<div class="row">
+		
+										<div class="col-6">
+											<input class="step-input step-repair__input" type="checkbox" id="q41" name="repair" value="41"><label class="step-repair__label step-repair__label_first"
+												for="q41">
+												<span class="step-repair__label-text">Без ремонта</span>
+												<div class="step-repair__label-block">
+													<p class="step-repair__label-block__title">Без ремонта</p>
+													<span class="step-repair__label-block__subtitle">Черновая отделка от застройщика</span>
+													<button class="button step-repair__label-block__button">Выбрать</button>
+												</div><!-- /.step-repair__label-block -->
+											</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-repair__input" type="checkbox" id="q42" name="repair" value="42"><label class="step-repair__label step-repair__label_second"
+												for="q42">
+												<span class="step-repair__label-text">Чистовой ремонт</span>
+												<div class="step-repair__label-block">
+													<p class="step-repair__label-block__title">Чистовой ремонт</p>
+													<span class="step-repair__label-block__subtitle">Косметическая отделка от застройщика, поклеены обои, выложен ламинат, побелен потолок, проведены коммуникации</span>
+													<button class="button step-repair__label-block__button">Выбрать</button>
+												</div><!-- /.step-repair__label-block -->
+											</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-repair__input" type="checkbox" id="q43" name="repair" value="43"><label class="step-repair__label step-repair__label_third"
+												for="q43">
+												<span class="step-repair__label-text">Российский ремонт</span>
+												<div class="step-repair__label-block">
+													<p class="step-repair__label-block__title">Российский ремонт</p>
+													<span class="step-repair__label-block__subtitle">Деревянные плинтусы, потолочная плитка из пенопласта, деревянные окна и т.д.</span>
+													<button class="button step-repair__label-block__button">Выбрать</button>
+												</div><!-- /.step-repair__label-block -->
+											</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-repair__input" type="checkbox" id="q44" name="repair" value="44"><label class="step-repair__label step-repair__label_fourth"
+												for="q44">
+												<span class="step-repair__label-text">Современный ремонт</span>
+												<div class="step-repair__label-block">
+													<p class="step-repair__label-block__title">Современный ремонт</p>
+													<span class="step-repair__label-block__subtitle">Евроремонт, хайтек, лофт, модерн и т.д.</span>
+													<button class="button step-repair__label-block__button">Выбрать</button>
+												</div><!-- /.step-repair__label-block -->
+											</label>
+										</div><!-- /.col-4 -->
+		
+									</div><!-- /.row -->
+		
+									<div class="row align-items-center justify-content-center">
+		
+										<div class="col-4">
+											<button class="step-button__back button-prev" onclick="previous()">Вернуться на шаг назад</button><!-- /.button-back -->
+										</div><!-- /.col-5 -->
+		
+										<div class="col-4">
+											<button class="button step-button button-next" onclick="next()">Следующий шаг</button><!-- /.button -->
+										</div><!-- /.col-5 -->
+		
+									</div><!-- /.row -->
+								</form>
+							</div><!-- /.container -->
+		
+		
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step-four -->
+
+		<section class="step step-five hidden" id="step-five">
+			<div class="container">
+		
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block">
+		
+							<div class="container">
+								<div class="row justify-content-end">
+		
+									<div class="col-2">
+										<button class="button-close" onclick="closeSlide()">Закрыть</button><!-- /.button-close -->
+									</div><!-- /.col -->
+		
+								</div><!-- /.row -->
+		
+								<div class="row justify-content-center">
+									<div class="col-2">
+										<span class="steps-order">
+											Шаг 5 из 6
+										</span><!-- /.steps-order -->
+									</div><!-- /.col -->
+									<div class="col-8">
+										<ul class="steps-list">
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item"></li><!-- /.steps-list__item -->
+										</ul><!-- /.steps-list -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-title">
+											Примерно на какой бюджет ориентируетесь?
+										</p><!-- /.step-title -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-subtitle">
+											(можно выбрать несколько вариантов ответов)
+										</p><!-- /.step-subtitle -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								<form class="step-price__form" action="#">
+									<div class="row">
+		
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q51" name="price" value="51"><label class="step-price__label step-price__label_first"
+												for="q51">До 2 000 000 ₽</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q52" name="price" value="52"><label class="step-price__label step-price__label_second"
+												for="q52">2 000 000 ₽ – 3 000 000 ₽</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q53" name="price" value="53"><label class="step-price__label step-price__label_third"
+												for="q53">3 000 000 ₽ – 4 000 000 ₽</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q54" name="price" value="54"><label class="step-price__label step-price__label_fourth"
+												for="q54">4 000 000 ₽ и выше</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q55" name="price" value="55"><label class="step-price__label step-price__label_fifth"
+												for="q55">Пока не определились</label>
+										</div><!-- /.col-4 -->
+		
+									</div><!-- /.row -->
+		
+									<div class="row align-items-center justify-content-center">
+		
+										<div class="col-4">
+											<button class="step-button__back button-prev" onclick="previous()">Вернуться на шаг назад</button><!-- /.button-back -->
+										</div><!-- /.col-5 -->
+		
+										<div class="col-4">
+											<button class="button step-button button-next" onclick="next()">Следующий шаг</button><!-- /.button -->
+										</div><!-- /.col-5 -->
+		
+									</div><!-- /.row -->
+								</form>
+							</div><!-- /.container -->
+		
+		
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step-five -->
+
+		<section class="step step-six hidden" id="step-six">
+			<div class="container">
+		
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block">
+		
+							<div class="container">
+								<div class="row justify-content-end">
+		
+									<div class="col-2">
+										<button class="button-close" onclick="closeSlide()">Закрыть</button><!-- /.button-close -->
+									</div><!-- /.col -->
+		
+								</div><!-- /.row -->
+		
+								<div class="row justify-content-center">
+									<div class="col-2">
+										<span class="steps-order">
+											Шаг 6 из 6
+										</span><!-- /.steps-order -->
+									</div><!-- /.col -->
+									<div class="col-8">
+										<ul class="steps-list">
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+											<li class="steps-list__item steps-list__item_active"></li><!-- /.steps-list__item -->
+										</ul><!-- /.steps-list -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-title">
+											Как вы хотите купить квартиру?
+										</p><!-- /.step-title -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+		
+								<div class="row">
+									<div class="col">
+										<p class="step-subtitle">
+											(можно выбрать несколько вариантов ответов)
+										</p><!-- /.step-subtitle -->
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								<form class="step-price__form" action="#">
+									<div class="row">
+		
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q61" name="price" value="61"><label class="step-price__label step-price__label_first"
+												for="q61">В ипотеку</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q62" name="price" value="62"><label class="step-price__label step-price__label_second"
+												for="q62">Материнским капиталом</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q63" name="price" value="63"><label class="step-price__label step-price__label_third"
+												for="q63">Военной ипотекой</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q64" name="price" value="64"><label class="step-price__label step-price__label_fourth"
+												for="q64">Чистая покупка</label>
+										</div><!-- /.col-4 -->
+										<div class="col-6">
+											<input class="step-input step-price__input" type="checkbox" id="q65" name="price" value="65"><label class="step-price__label step-price__label_fifth"
+												for="q65">Долевая покупка</label>
+										</div><!-- /.col-4 -->
+		
+									</div><!-- /.row -->
+		
+									<div class="row align-items-center justify-content-center">
+		
+										<div class="col-4">
+											<button class="step-button__back button-prev" onclick="previous()">Вернуться на шаг назад</button><!-- /.button-back -->
+										</div><!-- /.col-5 -->
+		
+										<div class="col-4">
+											<button class="button step-button button-next" onclick="next()">Следующий шаг</button><!-- /.button -->
+										</div><!-- /.col-5 -->
+		
+									</div><!-- /.row -->
+								</form>
+							</div><!-- /.container -->
+		
+		
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step-six -->
+
+		<section class="step step-result hidden" id="step-result">
+			<div class="container">
+			
+				<div class="row">
+			
+					<div class="col-6">
+						<div class="step-result__block">
+							<h4 class="step-result__block-title">
+								Результат
+							</h4>
+							<h5 class="step-result__block-subtitle">
+								Мы учли ваши пожелания <br>
+								и подобрали 12 вариантов квартир <br>
+								по вашим критериям
+							</h5>
+							<h6 class="step-result__block-descr">
+								Остался последний шаг, напишите свой номер, <br>
+								мы свяжемся с вами и подберем квартиру <br>
+								конкретно под вас бесплатно.
+							</h6>
+							<input class="step-result__block-input" type="tel" placeholder="Введите Ваш номер телефона">
+							<button class="button step-result__block-button" onclick="next()">Отправить</button>
+						</div><!-- /.main-block -->
+					</div><!-- /.col-6 -->
+			
+				</div><!-- /.row -->
+				<div class="step-result__img"></div><!-- /.step-result__img -->
+			</div><!-- /.container -->
+		</section><!-- /.step step-result -->
+
+		<section class="step step-thanks hidden" id="step-thanks">
+			<div class="container">
+			
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="step-block step-thanks__block">
+			
+							<div class="row justify-content-center">
+			
+								<div class="col">
+									<img class="step-thanks__img" src="/img/check.svg" alt="Check" width="63px" height="63px">
+								</div><!-- /.col -->
+			
+							</div><!-- /.row -->
+							
+							<div class="row">
+								<div class="col">
+									<p class="step-thanks__title">
+										Благодарим Вас!
+									</p><!-- /.step-thanks__title -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+
+							<div class="row">
+								<div class="col">
+									<p class="step-thanks__subtitle">
+										Наш менеджер свяжется с Вами в ближайшее время
+									</p><!-- /.step-thanks__subtitle -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+				
+							<button class="button step-button" onclick="closeSlide()">Закрыть</button><!-- /.button -->
+			
+						</div><!-- /.step-block -->
+					</div><!-- /.col-10 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.step step-thanks -->
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

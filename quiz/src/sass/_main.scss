@@ -1,0 +1,101 @@
+.main {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100vh;
+  background: #000 url("../img/main/bg.jpg") center no-repeat;
+  background-size: cover;
+  z-index: 2;
+
+  &-logo {
+    height: 150px;
+    width: 150px;
+  }
+
+  &-text {
+    &__top {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-family: $semibold;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    &__bot {
+      color: rgb(161, 162, 166);
+    }
+
+    &__adress {
+      color: rgb(255, 255, 255);
+    }
+
+    &_right {
+      text-align: right;
+    }
+    &__decl{
+      margin-bottom: 10px;
+    }
+  }
+
+  &-block {
+    margin-bottom: 150px;
+    padding-top: 140px;
+
+    &__title {
+      margin-bottom: 40px;
+      line-height: 62px;
+    }
+
+    &__subtitle {
+      margin-bottom: 46px;
+      line-height: 39px;
+    }
+
+    &__descr {
+      margin-bottom: 46px;
+    }
+
+    &__questions {
+      margin-left: 90px;
+      color: #a1a2a6;
+      font-size: 18px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -60px;
+        background-color: #a1a2a6;
+        width: 30px;
+        height: 2px;
+      }
+    }
+  }
+
+  &-circle {
+    position: absolute;
+    top: -30%;
+    left: 67%;
+    display: block;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-color: $main;
+    z-index: -1;
+  }
+
+  &-render {
+    position: absolute;
+    top: 15%;
+    left: 57%;
+    display: block;
+
+    &__img {
+      width: 848px;
+    }
+  }
+}
