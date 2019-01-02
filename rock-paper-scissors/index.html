@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <header>
+    <h1>Rock Paper Scissors Game</h1>
+  </header>
+  <main>
+    <div class="score-board">
+      <div id="you" class="label">You</div><!-- /.label -->
+      <div id="computer" class="label">Computer</div><!-- /.label -->
+      <div class="score">
+        <span id="your-score">0</span><!-- /#your-score -->
+        :
+        <span id="computer-score">0</span><!-- /#computer-score -->
+      </div><!-- /.score -->
+    </div><!-- /.score-board -->
+    <div id="result-text" class="result">
+      Make your choice.
+    </div><!-- /.result -->
+    <div class="choices">
+      <div id="r" class="choice">
+        <img src="img/rock.png" alt="#">
+        <h2 class="choice-title">Rock</h2><!-- /.choice-title -->
+      </div>
+      <div id="p" class="choice">
+        <img src="img/paper.png" alt="#">
+        <h2 class="choice-title">Paper</h2><!-- /.choice-title -->
+      </div>
+      <div id="s" class="choice">
+        <img src="img/scissors.png" alt="#">
+        <h2 class="choice-title">Scissors</h2><!-- /.choice-title -->
+      </div>
+    </div><!-- /.choices -->
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
