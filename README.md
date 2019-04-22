@@ -15,3 +15,11 @@
   
 ![Screenshot 1](https://i.imgur.com/OOiR7OB.png)
 </details>
+
+## Star Wars Database React app [![Netlify Status](https://api.netlify.com/api/v1/badges/55552075-7957-4ad4-a67a-88513c62e8f9/deploy-status)](https://app.netlify.com/sites/star-db/deploys)
+[Live demo](https://star-db.netlify.com/) / [Source Code](https://github.com/fast1sh/star-db)
+<details>
+  <summary>Screenshot</summary>
+  
+![Screenshot 1](https://i.imgur.com/bKEdf7V.png)
+</details>
