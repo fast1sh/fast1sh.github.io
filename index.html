@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Simple AR.js App (Mobile)</title>
+  <title>Simple AR.js App (Markerless)</title>
   <style>
     #container {
       width: 100%;
@@ -17,10 +17,9 @@
 </head>
 <body>
   <div id="container">
-    <a-scene embedded arjs="sourceType: camera; patternRatio: 0;">
-      <a-marker-camera preset="hiro"></a-marker-camera>
-      <a-box position="0 0.5 0" material="color: red;"></a-box>
-      <a-entity camera></a-entity>
+    <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix;">
+      <a-camera-static></a-camera-static>
+      <a-box position="0 0.5 -1" material="color: red;"></a-box>
     </a-scene>
   </div>
 </body>
